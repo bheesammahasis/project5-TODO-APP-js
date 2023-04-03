@@ -1,0 +1,149 @@
+.body0{
+    background-color: black;
+}
+.s1{
+    color: yellow;
+}
+.s2{
+    color: white;
+}
+.a1{
+    float:right;
+    margin-right: 100px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+.b1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    color: black;
+}
+.h1{
+    margin-left: 100px;
+    font-family:serif;
+}
+.h2{
+    color: white;
+    margin-left: 100px;
+    font-family:'Times New Roman', Times, serif;
+}
+/*code of css for index.html*/
+.body1{
+    background-color: black;
+}
+.opacity1#blur.active{
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}
+#popup1{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: white;
+    position:absolute;
+    left: 450px;
+    top: 200px;
+    z-index: 1;
+}
+#popup2{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    background-color:skyblue;
+    position: absolute;
+    left: 450px;
+    top: 200px;
+}
+
+.pu1{
+    text-align: center;
+}
+
+.h3{
+    color: red;
+}
+ .b3{
+    width:70px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    border-radius: 12px;
+    border: 1px solid white;
+ }
+ .i2{
+    width:200px;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid yellow;
+    box-shadow:2px 3px red ;
+ }
+
+ /*css for index.html*/
+
+ #container{
+    border: px solid white;
+    display: flex;
+   gap: 15px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+  }
+
+.card{
+    width: 180px;
+    height: 250px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 2%;
+}
+.item1{
+    width: 150px;
+    height: 50px;
+    border: 0px solid black;
+    position: relative;
+    top: 0px;
+    left: 15px;
+   
+    
+}
+.delete{
+    width:70px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    border-radius: 12px;
+    border: 1px solid white;
+ }
+ .add{
+    width:70px;
+    height: 30px;
+    color: white;
+    background-color:blue;
+    border-radius: 12px;
+    border: 1px solid white;
+ }
+ ul li.checked {
+    text-decoration: line-through;
+  }
+
+ ul li.checked::before {
+    content: '';
+    border-width: 0 2px 2px 0;
+  }
+
+  ul li:nth-child(odd) {
+    background:lightpink;
+  }
+  
+  ul li:nth-child(even) {
+    background: lightcyan;
+  }
+ 

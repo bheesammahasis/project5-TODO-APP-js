@@ -14,8 +14,6 @@ function toggle1(){
 }*/
 //
 let data = [];
-let cardId;
-
 // show Add card popup
 function showAddCardPop() {
     const popup1 = document.getElementById("popup1");
@@ -68,18 +66,19 @@ function renderCards() {
   }
   cardcontainer.innerHTML = child;
   closeAddCardPopup();
-  removeAddContentToCardPopup()
+  removeAddContentToCardPopup();
 }
 
 function deleteCard(id) {
   const cardcontainer = document.getElementById("container");
+  console.log("CardContainer:",cardcontainer);
   const cardId = `card_${id}` ;
   const card = document.getElementById(cardId);
   //remove child from parent node
   card.parentNode.removeChild(card);
-  data = data.filter((item1) => item1.id !== cardId);
-  console.log("updated card container",cardcontainer);
+  data = data.filter(item => item.id !== cardId);
   console.log("id of card to be deleted",id);
+  console.log("updated card container",cardcontainer);
 }
 
 function showAddContentToCardPopup(id) {
@@ -110,10 +109,14 @@ function addContentToCard() {
     liNode.innerHTML = contentText;
     Ul.appendChild(liNode);
     removeAddContentToCardPopup();
+    liNode.addEventListener('click',()=>{
+      liNode.style.textDecoration='line-through';
+    })
   } else {
     alert("Please add task name");
   }
 }
+
 // Add a "checked" symbol when clicking on a list item
 /*var list = document.querySelector('ul');
 list.addEventListener('click', function(om) {

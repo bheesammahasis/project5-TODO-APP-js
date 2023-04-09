@@ -130,14 +130,16 @@
     border-radius: 12px;
     border: 1px solid white;
  }
-/* ul li.checked {
+ 
+.checked {
     text-decoration: line-through;
-  }*/
+    color:rebeccapurple;
+  }
 
- ul li.checked::before {
+ /*ul li.checked::before {
     content: '';
     border-width: 0 2px 2px 0;
-  }
+  }*/
 
   ul li:nth-child(odd) {
     background:lightpink;

@@ -112,13 +112,12 @@
      else {
     document.getElementById("myInput1").value = "";
     const liNode = document.createElement("li");
-    liNode.className="checked"
     liNode.innerHTML = contentText;
     Ul.appendChild(liNode);
     removeAddContentToCardPopup();
-    /*liNode.addEventListener('click',()=>{
+    liNode.addEventListener('click',()=>{
       liNode.style.textDecoration='line-through';
-    })*/
+    })
     console.log("data",data);
     for(let i=0;i<data.length;i++){
       console.log("content...",data[i].id,cardId);

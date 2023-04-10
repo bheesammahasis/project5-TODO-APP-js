@@ -1,17 +1,3 @@
-/*//popup1 created
-function toggle(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-    var popup = document.getElementById('popup1');
-    popup.classList.toggle('active');
-}
-function toggle1(){
-    var container = document.getElementById('container');
-    container.classList.toggle1('active');
-    var popup2 = document.getElementById('popup2');
-     popup2.classList.toggle1('active');
-     // filter: blur(10px);
-}*/
 //
    let data = [];
    let cardId;
@@ -52,13 +38,12 @@ function toggle1(){
     //
 
   function renderContent(){
-        for(let i=0;i<data.length;i++){
+    for(let i=0;i<data.length;i++){
           const ulElement=document.getElementById(`content_list_${data[i].id}`);
           let child="";
-          for(let j=0;j<data[i].content.length;j++){
-            const content = data[i].content[j];
-            child += `<li id="content_${content.id}" 
-             onclick="doneTask(${content.id})">${content.contentText}</li>`
+          for(let j = 0; j < data[i].content.length;j++){
+          const content = data[i].content[j];
+          child += `<li id="content_${content.id}"  onclick="doneTask(${content.id})">${content.contentText}</li>` 
           }
           ulElement.innerHTML= child;
         }
@@ -82,12 +67,11 @@ function toggle1(){
         </div>
         </div>`;
   }
-  cardcontainer.innerHTML = child;
-  closeAddCardPopup();
-  renderContent();
-  removeAddContentToCardPopup();
-  
-  }
+   cardcontainer.innerHTML = child;
+     closeAddCardPopup();
+     removeAddContentToCardPopup();
+    // renderContent();
+   }
 
   function deleteCard(id) {
   const cardcontainer = document.getElementById("container");
@@ -138,10 +122,10 @@ function toggle1(){
     console.log("data",data);
     for(let i=0;i<data.length;i++){
       console.log("content...",data[i].id,cardId);
-      if(data[i].id== cardId){
+      if(data[i].id == cardId){
           const content={
           id:new Date().getTime().toString(),
-          contentText:contentText,
+          contentText: contentText,
           done:false,
         }
         data[i].content.push(content);

@@ -70,7 +70,7 @@
    cardcontainer.innerHTML = child;
      closeAddCardPopup();
      removeAddContentToCardPopup();
-    // renderContent();
+     renderContent();
    }
 
   function deleteCard(id) {

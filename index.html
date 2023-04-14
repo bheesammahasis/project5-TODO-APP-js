@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="body0">
-    <div id="opacity1">
-    <h1 class="h1"><span class="s1">Tasks</span><span class="s2"> List</span> 
-     </h1>
-    <a class="a1" href="#" onclick="showAddCardPop()"><button class="b1">+</button>Add Item</a>
-    <h2 class="h2" id="h2">No Items in the todo lists</h2>
-    </div>
-    
-    <div id="popup1">
-        <div class="pu1" id="pu0">
-        <h3 class="h3">Add New Task</h3>
-        <input type="text" id="myInput"  class="i2" placeholder="Add New Task"><br><br>
-        <button class="b3" onclick="handleAddCard()" >Add</button>
-        <button class="b3" onclick="closeAddCardPopup()">Close</button>
-    </div>
-    </div>
-    
-    <div id="container">om</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <span class="a1" id="head">
+        <b class="task">Tasks</b> <span class="list"> List </span></span
+      >
 
-    <!--second popup when card created is done-->
-    <div id="popup2">
-        <div class="pu1" id="pu2a">
-        <h3 class="h3">Add New Task</h3>
-        <input id="myInput1"  class="i2" placeholder="Add New Task"><br><br>
-       <button class="b3" onclick="addContentToCard()">Add</button>
-        <button class="b3" onclick="removeAddContentToCardPopup()">Close</button>
-    </div>
-    </div>
+      
+      <div class="b1" id="addbtn1">
+        <button onclick="callme()" class="plus">+</button>
+        <span class="items" onclick="callme()"> Add items</span>   
+       </div>
+       <div class="cardHeading"></div>
+       <button id="back" onclick="backToAll()">Back</button>
+       <div id="card-container"></div>
+
+
+       <div class="popup2" id="popup2">
+        <span class="c1">Add New List</span>
+        <input type="text"  id="inputtext2"/> 
+      <span  id="k99">
+        <button id="bb90" onclick= 'AddContentToCard()'>Add</button> 
+        <button id="bb91" onclick="cloceme()">Close</button> 
+      </span>
+        </div>
+
+      
+
+    
+    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
